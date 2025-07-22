@@ -23,7 +23,7 @@ locals {
 
 module "network" {
   source                                 = "terraform-google-modules/network/google"
-  version                                = "10.0.0"
+  version                                = "11.1.1"
   project_id                             = module.data_ingestion_project.project_id
   network_name                           = local.network_name
   shared_vpc_host                        = "false"
