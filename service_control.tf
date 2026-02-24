@@ -445,7 +445,7 @@ resource "google_access_context_manager_service_perimeter_resource" "perimeter-r
 
 module "vpc_sc_bridge_data_ingestion_governance" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "6.2.1"
+  version = "7.2.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_ingestion_to_governance_${random_id.suffix.hex}"
@@ -471,7 +471,7 @@ module "vpc_sc_bridge_data_ingestion_governance" {
 
 module "vpc_sc_bridge_data_governance" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "6.2.1"
+  version = "7.2.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_data_to_governance_${random_id.suffix.hex}"
@@ -497,7 +497,7 @@ module "vpc_sc_bridge_data_governance" {
 
 module "vpc_sc_bridge_data_ingestion" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "6.2.1"
+  version = "7.2.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_data_to_ingestion_${random_id.suffix.hex}"
