@@ -1,6 +1,6 @@
 module github.com/terraform-google-modules/secured-data-warehouse-onprem-ingest/test/integration
 
-go 1.23.0
+go 1.24
 
 require (
 	github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test v0.17.7
@@ -33,7 +33,7 @@ require (
 	github.com/hashicorp/terraform-json v0.25.0 // indirect
 	github.com/jinzhu/copier v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/mailru/easyjson v0.9.0 // indirect
 	github.com/mattn/go-shellwords v1.0.12 // indirect
 	github.com/mattn/go-zglob v0.0.6 // indirect
